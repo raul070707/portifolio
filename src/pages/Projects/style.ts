@@ -2,14 +2,21 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: calc(100% - 88px);
-  padding: 0 100px;
+  padding: 20px;
   height: 100vh;
   position: absolute;
   left: 88px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   gap: 50px;
+
+  @media (min-width: 820px) {
+    padding: 0 80px;
+    flex-direction: row;
+    justify-content: center;
+  }
 `;
 
 export const MainInfo = styled.div`

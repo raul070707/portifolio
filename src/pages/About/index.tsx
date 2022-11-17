@@ -28,7 +28,14 @@ const About = () => {
           </div>
           <ContactContainer>
             <Contact>
-              <Button>
+              <Button
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1vP0vvzHLR3crn0q_lr8BsWA26G074sTt/view?usp=sharing",
+                    "_blank"
+                  )
+                }
+              >
                 <FaBook />
                 Download CV
               </Button>
